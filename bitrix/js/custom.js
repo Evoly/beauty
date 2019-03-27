@@ -55,8 +55,6 @@ $(document).ready(function() {
 
   $('.js-detail-slider').owlCarousel(owlOptions_1);
 
-  console.log($('input[name="tel"]'));
-
   $('input[name="tel"]').inputmask({
     "mask": "+7 (999) 999-9999"
   });

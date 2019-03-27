@@ -374,14 +374,76 @@
 		<div class="footer-copy">
 			&copy; BeautyPremia 2019 </div>
 	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="join" id="join">
+		<div class="modal-dialog  modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Принять участие</h4>
+				</div>
+				<form class="form" action="#" method="post">
+					<div class="modal-body">
+						<div class="form-group"><input class="form-control" type="text" name="name" placeholder="Ваше имя" data-type="text" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="text" name="tel" placeholder="Ваш телефон" data-type="tel" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="text" name="email" placeholder="Ваш E-mail" data-type="email" required="required" /></div>
+						<div class="form-group">
+							<label class="checkbox_wr">
+								<input data-id="" class="" type="checkbox" checked required="required" data-type="checkbox">
+								<span class="checkmark checkmark_box"></span>
+								<span>Я согласен(а) на обработку моих персональных данных</span>
+							</label>
+
+						</div>
+					</div>
+					<div class="modal-footer"><button class="button js-submit" type="submit">Отправить</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="buy" id="buy">
+		<div class="modal-dialog  modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Купить билет</h4>
+				</div>
+				<form class="form" action="#" method="post">
+					<div class="modal-body">
+						<div class="form-group"><input class="form-control" type="text" name="name" placeholder="Ваше имя" data-type="text" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="text" name="tel" placeholder="Ваш телефон" data-type="tel" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="text" name="email" placeholder="Ваш E-mail" data-type="email" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="number" name="amount" placeholder="Количество билетов" data-type="amount" required="required" /></div>
+						<div class="form-group">
+							<label class="checkbox_wr">
+								<input data-id="" class="" type="checkbox">
+								<span class="checkmark checkmark_box"></span>
+								<span>Член Callery Club</span>
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="checkbox_wr">
+								<input data-id="" class="" type="checkbox" checked required="required" data-type="checkbox">
+								<span class="checkmark checkmark_box"></span>
+								<span>Я согласен(а) на обработку моих персональных данных</span>
+							</label>
+						</div>
+					</div>
+					<div class="modal-footer"><button class="button js-submit" type="submit">Отправить</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
 	<script src="ajax/libs/jquery/3-1-0/jquery.min.js"></script>
-	<script>
+	<!-- <script>
 		if (typeof jQuery == 'undefined') {
 			document.write(unescape("%3Cscript src='bitrix/templates/s7_beauty/vendor/jquery.min.js' %3E%3C/script%3E"));
 		}
-	</script>
+		</script> -->
 	<script type="text/javascript" src="bitrix/js/abudagov-reporterror/html2canvas.js"></script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		BX.message({
 			"AB_RS_MAX_SIZE": "\u0412\u044b\u0434\u0435\u043b\u0435\u043d\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0431\u043e\u043b\u044c\u0448\u043e\u0439 (\u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c 500 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432)",
 			"AB_RS_MIN_SIZE": "\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0432\u044b\u0434\u0435\u043b\u0438\u0442\u044c \u043e\u0448\u0438\u0431\u043a\u0443",
@@ -390,34 +452,22 @@
 			"AB_RS_TITLE": "\u0421\u043e\u043e\u0431\u0449\u0438\u0442\u044c \u043e\u0431 \u043e\u0448\u0438\u0431\u043a\u0435",
 			"AB_RS_BUTTON": "\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c"
 		});
-	</script>
-	<script type="text/javascript">
+		</script> -->
+	<!-- <script type="text/javascript">
 		if (typeof jQuery === "undefined") {
 			document.write(unescape("%3Cscript src='https:ajax/libs/jquery/3-1-0/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
 		}
-	</script>
+		</script> -->
+
 	<script type="text/javascript" src='bitrix/js/abudagov-reporterror/script.js'></script>
-	<script type="text/javascript" src="bitrix/cache/js/s7/s7_beauty/template_ba8dd525b738c6b0248b9e3d4a4f5f44/template_ba8dd525b738c6b0248b9e3d4a4f5f44_v1.js"></script>
-	<script type="text/javascript">
-		var _ba = _ba || [];
-		_ba.push(["aid", "63446f05d92ccbc6e4b307a85223a141"]);
-		_ba.push(["host", "www.beauty.budagov.ru"]);
-		(function() {
-			var ba = document.createElement("script");
-			ba.type = "text/javascript";
-			ba.async = true;
-			ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(ba, s);
-		})();
-	</script>
-	<script type="text/javascript">
-		if (window == window.top) {
-			document.write(
-				'<a class="ab_link-mp" href="http://marketplace.1c-bitrix.ru/solutions/abudagov.wwwbeauty/" target="_blank" rel="nofollow noopener noreferrer" title="Перейти на страницу магазина" style="	position: fixed;top: 10%;left: -1px;z-index: 2222;margin-top: -43px;background: #00b4ff;display: block;border-right: 0.5px solid #fff;width: 40px;height: 43px;text-align: center;line-height: 40px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkNjIzZmU0Yi0xMmVlLWU3NGItODYwOC1jNDMwMjJjMTViZjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkQ2RjZFRDdFMTZEMTFFNkFCQjE5MzkzQUFEMEVCQTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkQ2RjZFRDZFMTZEMTFFNkFCQjE5MzkzQUFEMEVCQTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpkNjIzZmU0Yi0xMmVlLWU3NGItODYwOC1jNDMwMjJjMTViZjMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ZDYyM2ZlNGItMTJlZS1lNzRiLTg2MDgtYzQzMDIyYzE1YmYz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" alt="Готовое решение 1С-Битрикс"/></a>'
-			);
-		}
-	</script>
+	<script type="text/javascript" src="bitrix/cache/js/s7/s7_beauty/template_d1a3b94ad9cf95dc6685893b5e6e7227/template_d1a3b94ad9cf95dc6685893b5e6e7227_v1.js"></script>
+	<script src="bitrix/js/owl-carousel/owl.carousel.min.js"></script>
+	<script src="bitrix/js/bootstrap.js"></script>
+	<script src="bitrix/js/inputmask.js"></script>
+	<script src="bitrix/js/jquery.inputmask.js"></script>
+
+	<script src='bitrix/js/custom.js'></script>
+
 </body>
 
 </html>
