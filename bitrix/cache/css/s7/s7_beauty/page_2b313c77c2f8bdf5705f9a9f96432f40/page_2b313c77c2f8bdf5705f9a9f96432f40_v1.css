@@ -1,0 +1,89 @@
+
+
+/* Start:/bitrix/templates/s7_beauty/components/bitrix/system.pagenavigation/.default/style.min.css?15183549512530*/
+.bx-pagination{margin:10px 0}.bx-pagination .bx-pagination-container{text-align:center;position:relative}.bx-pagination .bx-pagination-container ul{padding:0;margin:0;list-style:none;display:inline-block}.bx-pagination .bx-pagination-container ul li{display:inline-block;margin:0 2px 15px 2px}.bx-pagination .bx-pagination-container ul li span{-webkit-transition:color .3s ease,background-color .3s ease,border-color .3s ease;-moz-transition:color .3s ease,background-color .3s ease,border-color .3s ease;-ms-transition:color .3s ease,background-color .3s ease,border-color .3s ease;-o-transition:color .3s ease,background-color .3s ease,border-color .3s ease;transition:color .3s ease,background-color .3s ease,border-color .3s ease;background:#eff0f1;padding:0 8px;display:block;height:32px;min-width:32px;line-height:32px;color:#444;font-size:14px;border-radius:16px;vertical-align:middle;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.bx-pagination .bx-pagination-container ul li a{text-decoration:none;display:block;border-radius:16px;height:32px;min-width:32px;line-height:32px;color:#444;vertical-align:middle}.bx-pagination .bx-pagination-container ul li a:hover span{background:#dadada}.bx-pagination .bx-pagination-container ul li.bx-active span{background:#ffa800;color:#fff}.bx-pagination .bx-pagination-container ul li.bx-pag-all a span,.bx-pagination .bx-pagination-container ul li.bx-pag-next a span,.bx-pagination .bx-pagination-container ul li.bx-pag-prev a span{background:#fff;border:2px solid #eff0f1;line-height:28px;padding:0 18px;color:#444}.bx-pagination .bx-pagination-container ul li.bx-pag-all span,.bx-pagination .bx-pagination-container ul li.bx-pag-next span,.bx-pagination .bx-pagination-container ul li.bx-pag-prev span{color:#aab1b4;background:#fff;border:2px solid #eff0f1;line-height:28px;padding:0 18px}.bx-pagination .bx-pagination-container ul li.bx-pag-all a:hover span,.bx-pagination .bx-pagination-container ul li.bx-pag-next a:hover span,.bx-pagination .bx-pagination-container ul li.bx-pag-prev a:hover span{background:#fff;border-color:#dadada;color:#000}.bx-pagination.bx-green .bx-pagination-container ul li.bx-active span{background:#3bc915;color:#fff}.bx-pagination.bx-yellow .bx-pagination-container ul li.bx-active span{background:#f9a91d;color:#fff}.bx-pagination.bx-red .bx-pagination-container ul li.bx-active span{background:#e22b2b;color:#fff}.bx-pagination.bx-blue .bx-pagination-container ul li.bx-active span{background:#ffa800;color:#fff}
+/* End */
+
+
+/* Start:/bitrix/templates/s7_beauty/components/bitrix/news.list/services/style.css?15494484082355*/
+.services__list{
+}
+	.services__item{
+		margin-bottom: 35px;
+		text-decoration: none !important;
+	}
+		.services__item-table{
+			display: table;
+			width: 100%;
+		}
+			.services__item-img{
+				position: relative;
+				min-height: 165px;
+				min-width: 150px;
+				width: 150px;
+				display: table-cell;
+				vertical-align: top;
+                text-align: center;
+			}
+			.services__item-img:before{
+				display: block;
+				content: "";
+				width: 150px;
+				height: 165px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				position: absolute;
+				top: 0;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='150px' height='165px'%3E%3Cpath fill-rule='evenodd' fill='rgb%28255, 255, 255%29' d='M-0.000,165.000 L-0.000,0.000 L150.000,0.000 L150.000,165.000 L-0.000,165.000 ZM146.000,112.000 L146.000,51.000 C146.000,51.000 145.622,42.676 136.000,36.000 C124.056,27.712 103.206,15.869 86.000,8.000 C82.582,6.437 78.687,5.000 75.000,5.000 C71.318,5.000 67.379,6.344 64.000,8.000 C47.523,16.077 29.116,26.246 15.000,36.000 C4.492,43.261 4.000,53.000 4.000,53.000 L4.000,112.000 C4.000,112.000 3.135,121.714 14.000,129.000 C29.245,139.223 52.156,152.403 64.000,158.000 C67.341,159.579 71.357,161.000 75.000,161.000 C78.786,161.000 82.582,159.660 86.000,158.000 C102.513,149.980 121.606,138.783 136.000,129.000 C146.483,121.875 146.000,112.000 146.000,112.000 Z'/%3E%3C/svg%3E");
+				background-size: 100% 100%;
+			}
+			.services__item-img img{
+				width: 142px;
+				height: 157px;
+				margin: 4px;
+			}
+			.services__item-text{
+				padding-left: 25px;
+				display: table-cell;
+				vertical-align: middle;
+				min-height: 165px;
+			}
+				.services__item-name{
+					font-size: 24px;
+					margin-bottom: 15px;
+					line-height: 1.1;
+				}
+				.services__item-about{
+					color: #34495e;
+				}
+				.services__item-price{
+					margin-top: 5px;
+					color: #34495e;
+					font-weight: 600;
+				}
+
+@media screen and (max-width:767px) {
+    .services__item-table,
+    .services__item-img,
+    .services__item-text{
+        display: block;
+    }
+    .services__item{
+        margin-bottom: 30px;
+    }
+    .services__item-img{
+        margin-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    .services__item-text{
+        padding-left: 0;
+        min-height: 0;
+    }
+
+}
+
+/* End */
+/* /bitrix/templates/s7_beauty/components/bitrix/system.pagenavigation/.default/style.min.css?15183549512530 */
+/* /bitrix/templates/s7_beauty/components/bitrix/news.list/services/style.css?15494484082355 */
