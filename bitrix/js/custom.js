@@ -24,7 +24,7 @@ $(document).ready(function() {
   // };
 
   const owlOptions_4 = {
-    loop: true,
+    loop: false,
     margin: 20,
     nav: true,
     navText: [icon, icon],
@@ -41,19 +41,17 @@ $(document).ready(function() {
       },
       400: {
         items: 2,
-        nav: false,
         margin: 10,
       },
       0: {
         items: 1,
-        nav: false,
         margin: 10,
       }
     }
   };
 
   const owlOptions_3 = {
-    loop: true,
+    loop: false,
     margin: 20,
     nav: true,
     navText: [icon, icon],
@@ -61,21 +59,17 @@ $(document).ready(function() {
     items: 3,
     responsive: {
       1200: {
-        nav: true,
         items: 3
       },
       979: {
-        nav: true,
-        items: 3
+        items: 2
       },
       400: {
-        items: 2,
-        nav: false,
+        items: 1,
         margin: 10,
       },
       0: {
         items: 1,
-        nav: false,
         margin: 10,
       }
     }

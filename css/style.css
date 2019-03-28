@@ -340,6 +340,14 @@ a.nomination__link:hover {
 .slider-sm .owl-next  {
 	right: -50px;
 }
+.slider-sm .owl-prev.disabled svg,
+.slider-sm .owl-next.disabled svg {
+  fill: #e8dbd3;
+}
+.owl-prev.disabled,
+.owl-next.disabled {
+  pointer-events: none;
+}
 .checkbox_wr .checkmark {
     position: absolute;
     display: block;
