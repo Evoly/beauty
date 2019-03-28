@@ -7,12 +7,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link href="bitrix/css/abudagov-reporterror/style.min.css" type="text/css" rel="stylesheet" />
+	<!-- <link href="bitrix/css/abudagov-reporterror/style.min.css" type="text/css" rel="stylesheet" /> -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,700&subset=latin,cyrillic" type="text/css" rel="stylesheet" />
 	<link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" type="text/css" rel="stylesheet" />
-	<link href="bitrix/css/bootstrap.css" type="text/css" data-template-style="true" rel="stylesheet" />
-	<link href="bitrix/css/bootstrap-theme.css" type="text/css" data-template-style="true" rel="stylesheet" />
-	<link href="bitrix/css/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+	<link href="css/bootstrap.css" type="text/css" data-template-style="true" rel="stylesheet" />
+	<link href="css/bootstrap-theme.css" type="text/css" data-template-style="true" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
 	<link href="bitrix/templates/s7_beauty/themes/standart/color.css" type="text/css" rel="stylesheet" />
 	<link href="bitrix/js/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link href="bitrix/js/owl-carousel/owl.theme.default.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 						<a href="nominations.html" class="header-menu__link ">Номинации</a>
 						<a href="galereya.html" class="header-menu__link ">Галерея</a>
 						<a href="#" class="header-menu__link " data-toggle="modal" data-target="#join">Принять участие</a>
-						<a href="#" class="header-menu__link " data-toggle="modal" data-target="#buy">Купить билет на Премию</a>
+						<a href="#" class="header-menu__link " data-toggle="modal" data-target="#buy">Купить билет</a>
 						<a href="kontakty.html" class="header-menu__link ">Контакты</a>
 					</nav>
 					<div class="clearfix"></div>
@@ -76,29 +76,46 @@
 			</div>
 			<div class="front-slider-sm">
 				<div class="container">
-					<div class=" owl-carousel js-slider-sm">
-						<div class="nomination__item " id="">
-							<a href="card.html" class="nomination__img">
-								<img src="images/temp/slide.jpg" alt="">
-							</a>
-							<a href="card.html" class="nomination__link">Название</a>
-							<a href="card.html" class="nomination__link">магазин для нейл-специалистов</a>
-						</div>
-						<div class="nomination__item " id="">
-							<a href="card.html" class="nomination__img">
-								<img src="images/temp/slide.jpg" alt="">
-							</a>
-							<a href="card.html" class="nomination__link">Очень длинное название Очень длинное название</a>
-							<a href="card.html" class="nomination__link">магазин для нейл-специалистов</a>
-						</div>
-						<div class="nomination__item " id="">
-							<a href="card.html" class="nomination__img">
-								<img src="images/temp/slide.jpg" alt="">
-							</a>
-							<a href="card.html" class="nomination__link">Название</a>
-							<a href="card.html" class="nomination__link">магазин для нейл-специалистов</a>
+					<div class="slider-sm">
+						<div class=" owl-carousel js-slider-sm">
+							<div class="nomination__item " id="">
+								<a href="card.html" class="nomination__img">
+									<img src="images/temp/slide.jpg" alt="">
+								</a>
+								<a href="card.html" class="nomination__link">Название</a>
+								<a href="card.html" class="nomination__link nomination__link_beige">магазин для нейл-специалистов</a>
+							</div>
+							<div class="nomination__item " id="">
+								<a href="card.html" class="nomination__img">
+									<img src="images/temp/slide.jpg" alt="">
+								</a>
+								<a href="card.html" class="nomination__link">Название</a>
+								<a href="card.html" class="nomination__link nomination__link_beige">магазин для нейл-специалистов</a>
+							</div>
+							<div class="nomination__item " id="">
+								<a href="card.html" class="nomination__img">
+									<img src="images/temp/slide.jpg" alt="">
+								</a>
+								<a href="card.html" class="nomination__link">Название</a>
+								<a href="card.html" class="nomination__link nomination__link_beige">магазин для нейл-специалистов</a>
+							</div>
+							<div class="nomination__item " id="">
+								<a href="card.html" class="nomination__img">
+									<img src="images/temp/slide.jpg" alt="">
+								</a>
+								<a href="card.html" class="nomination__link">Очень длинное название Очень длинное название</a>
+								<a href="card.html" class="nomination__link nomination__link_beige">магазин для нейл-специалистов</a>
+							</div>
+							<div class="nomination__item " id="">
+								<a href="card.html" class="nomination__img">
+									<img src="images/temp/slide.jpg" alt="">
+								</a>
+								<a href="card.html" class="nomination__link">Название</a>
+								<a href="card.html" class="nomination__link nomination__link_beige">магазин для нейл-специалистов</a>
+							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 			<div class="front-about">
@@ -155,7 +172,7 @@
 								<a href="nominations.html" class="nomination__link">Brow / lash салон</a>
 							</li>
 							<li class='nomination__list-item'>
-								<a href="nominations.html" class="nomination__link">Бренд года (ребрендинг компании, открытие новой торговой марки)</a>
+								<a href="nominations.html" class="nomination__link">Бренд года</a>
 							</li>
 							<li class='nomination__list-item'>
 								<a href="nominations.html" class="nomination__link">Стартап</a>
@@ -174,10 +191,10 @@
 								<a href="nominations.html" class="nomination__link">Фирменный стиль</a>
 							</li>
 							<li class='nomination__list-item'>
-								<a href="nominations.html" class="nomination__link">Персона года (личность, имеющая определенные заслуги, достижения в 2019 году)</a>
+								<a href="nominations.html" class="nomination__link">Персона года</a>
 							</li>
 							<li class='nomination__list-item'>
-								<a href="nominations.html" class="nomination__link">Профессиональный проект года (акции, мероприятия, розыгрыши, шоу-показы)</a>
+								<a href="nominations.html" class="nomination__link">Профессиональный проект года </a>
 							</li>
 							<li class='nomination__list-item'>
 								<a href="nominations.html" class="nomination__link">Преподаватель года по парикмахерскому искусству</a>
@@ -274,7 +291,8 @@
 								</div>
 								<div class="reviews-slider__item-right col-lg-9 col-md-8 col-sm-9 col-xs-12">
 									<div class="reviews-slider__item-quote">
-										Огромное спасибочки, Диане за такой жемчужный маникюр&#41;&#41; А мастеру Евгении за шикарную укладку перед корпоративном. Очень выручили! </div>
+										Мне будет приятно принять участие судьей данной премии года. С большим удовольствием просмотрю претендентов в доверенных мне номинациях. Всем желаю удачи!
+									</div>
 								</div>
 							</div>
 							<div class="reviews-slider__item" id="bx_1373509569_95603">
@@ -287,7 +305,7 @@
 								</div>
 								<div class="reviews-slider__item-right col-lg-9 col-md-8 col-sm-9 col-xs-12">
 									<div class="reviews-slider__item-quote">
-										Хотела поблагодарить мастера Нину, замечательно подстригла и покрасила. И при этом очень общительная девушка только положительные эмоции о себе оставила&#41; </div>
+										BeautyPremia– это хороший шанс показать свой салон или учебный центр с такой престижной стороны. А если еще и стать – ЛУЧШИМ! Желаю всем номинантам победы!</div>
 								</div>
 							</div>
 						</div>
@@ -299,17 +317,12 @@
 					<h2>
 						Галерея </h2>
 					<div class="gallery-list">
-						<div class="gallery-item" id="bx_3485106786_95602"><a href="upload/iblock/c59/p2.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/c59/228_228_2/p2.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95601"><a href="upload/iblock/d32/Untitled_1.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/d32/228_228_2/Untitled_1.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95600"><a href="upload/iblock/cf2/slide3.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/cf2/228_228_2/slide3.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95599"><a href="upload/iblock/c69/Rabota_parikmaherom._Skol_ko_zarabaty_vaet_parikmaher._Perspektivy_.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/c69/228_228_2/Rabota_parikmaherom._Skol_ko_zarabaty_vaet_parikmaher._Perspektivy_.jpg"
+						<div class="gallery-item"><a href="images/temp/girl.png" class="fancybox" data-fancybox-group="gallery"><img src="images/temp/girl.png" alt="Наши услуги"></a></div>
+						<div class="gallery-item"><a href="upload/iblock/d32/Untitled_1.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/d32/228_228_2/Untitled_1.jpg" alt="Наши услуги"></a></div>
+						<div class="gallery-item"><a href="upload/iblock/cf2/slide3.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/cf2/228_228_2/slide3.jpg" alt="Наши услуги"></a></div>
+						<div class="gallery-item"><a href="upload/iblock/c69/Rabota_parikmaherom._Skol_ko_zarabaty_vaet_parikmaher._Perspektivy_.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/c69/228_228_2/Rabota_parikmaherom._Skol_ko_zarabaty_vaet_parikmaher._Perspektivy_.jpg"
 								  alt="Наши услуги"></a></div>
 						<div class="gallery-item" id="bx_3485106786_95598"><a href="upload/iblock/d5b/pilling_lica.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/d5b/228_228_2/pilling_lica.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95597"><a href="upload/iblock/19f/pedikyr1.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/19f/228_228_2/pedikyr1.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95594"><a href="upload/iblock/f15/maxresdefault.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/f15/228_228_2/maxresdefault.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95593"><a href="upload/iblock/a98/kosmetolog_apparat.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/a98/228_228_2/kosmetolog_apparat.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95592"><a href="upload/iblock/149/i6BQ7CXA6.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/149/228_228_2/i6BQ7CXA6.jpg" alt="Наши услуги"></a></div>
-						<div class="gallery-item" id="bx_3485106786_95590"><a href="upload/iblock/9fb/girls1_.jpg" class="fancybox" data-fancybox-group="gallery"><img src="upload/resize_cache/iblock/9fb/228_228_2/girls1_.jpg" alt="Наши услуги"></a></div>
 					</div>
 					<div class="show-all text-right">
 						<a href="galereya.html">Посмотреть все</a> </div>
