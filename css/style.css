@@ -281,24 +281,26 @@ a.nomination__link:hover {
 	max-height: 100%;
 	fill: #fff;
 }
-.salon-cc a {
+.social a {
 	display: inline-block;
 	margin-right: 10px;
 }
-.salon-cc a:hover{
+.social a:hover{
 	text-decoration: none;
 }
-.salon-cc svg {
+.social svg {
 	transform: scale(1.8);
 	fill: #d2ab95;
 	transition: .5s;
 }
-
-.salon-cc svg:hover {
+.social {
+  margin-bottom: 20px;
+}
+.social svg:hover {
 	fill: #bb8c72;
 }
 .salon-detail__contancts {
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 .bx-breadcrumb-item {
 	float: left;
