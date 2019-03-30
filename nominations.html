@@ -10,12 +10,13 @@
 	<!-- <link href="bitrix/css/abudagov-reporterror/style.min.css" type="text/css" rel="stylesheet" /> -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,700&subset=latin,cyrillic" type="text/css" rel="stylesheet" />
 	<link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" type="text/css" rel="stylesheet" />
-	<link href="css/bootstrap.css" type="text/css" data-template-style="true" rel="stylesheet" />
+	<!-- <link href="css/bootstrap.css" type="text/css" data-template-style="true" rel="stylesheet" />
 	<link href="css/bootstrap-theme.css" type="text/css" data-template-style="true" rel="stylesheet" />
-	<link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
-	<link href="bitrix/templates/s7_beauty/themes/standart/color.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet" /> -->
+	<!-- <link href="bitrix/templates/s7_beauty/themes/standart/color.css" type="text/css" rel="stylesheet" /> -->
 	<link href="bitrix/js/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link href="bitrix/js/owl-carousel/owl.theme.default.css" rel="stylesheet">
+	<link href="css/main.css" type="text/css" data-template-style="true" rel="stylesheet" />
 </head>
 
 
@@ -94,7 +95,7 @@
 									<span class="vote__counter"> 8562</span>
 								</div>
 								<div class="col-xs-8 text-left">
-									<a href="#" class="button">Голосовать</a>
+									<a href="#" class="button" data-toggle="modal" data-target="#vote">Голосовать</a>
 								</div>
 							</div>
 						</div>
@@ -134,7 +135,7 @@
 									<span class="vote__counter"> 8562</span>
 								</div>
 								<div class="col-xs-8 text-left">
-									<a href="#" class="button">Голосовать</a>
+									<a href="#" class="button" data-toggle="modal" data-target="#vote">Голосовать</a>
 								</div>
 							</div>
 						</div>
@@ -174,7 +175,7 @@
 									<span class="vote__counter"> 8562</span>
 								</div>
 								<div class="col-xs-8 text-left">
-									<a href="#" class="button">Голосовать</a>
+									<a href="#" class="button" data-toggle="modal" data-target="#vote">Голосовать</a>
 								</div>
 							</div>
 						</div>
@@ -273,6 +274,32 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vote" id="vote">
+		<div class="modal-dialog  modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Зарегистрироваться</h4>
+				</div>
+				<form class="form" action="#" method="post">
+					<div class="modal-body">
+						<div class="form-group"><input class="form-control" type="text" name="name" placeholder="Ваше имя" data-type="text" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="text" name="tel" placeholder="Ваш телефон" data-type="tel" required="required" /></div>
+						<div class="form-group"><input class="form-control" type="text" name="email" placeholder="Ваш E-mail" data-type="email" required="required" /></div>
+						<div class="form-group">
+							<label class="checkbox_wr">
+								<input data-id="" class="" type="checkbox" checked required="required" data-type="checkbox">
+								<span class="checkmark checkmark_box"></span>
+								<span>Я согласен(а) на обработку моих персональных данных</span>
+							</label>
+
+						</div>
+					</div>
+					<div class="modal-footer"><button class="button js-submit" type="submit">Отправить</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<script src="ajax/libs/jquery/3-1-0/jquery.min.js"></script>
 
 	<script type="text/javascript" src="bitrix/js/abudagov-reporterror/html2canvas.js"></script>

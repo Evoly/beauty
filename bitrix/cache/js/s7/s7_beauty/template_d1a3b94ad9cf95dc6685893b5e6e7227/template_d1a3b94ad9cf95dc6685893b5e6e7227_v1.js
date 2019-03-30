@@ -57,7 +57,7 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 /* End */
 ;
 ; /* Start:"a:4:{s:4:"full";s:90:"/bitrix/templates/s7_beauty/components/bitrix/news.list/slider/script.min.js?1518354951113";s:6:"source";s:72:"/bitrix/templates/s7_beauty/components/bitrix/news.list/slider/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
-(function($){$(document).ready(function(){$(".slider").bxSlider({mode:"fade",speed:1e3,pager:false})})})(jQuery);
+// (function($){$(document).ready(function(){$(".slider").bxSlider({mode:"fade",speed:1e3,pager:false})})})(jQuery);
 /* End */
 ;
 ; /* Start:"a:4:{s:4:"full";s:91:"/bitrix/templates/s7_beauty/components/bitrix/news.list/reviews/script.min.js?1518354951109";s:6:"source";s:73:"/bitrix/templates/s7_beauty/components/bitrix/news.list/reviews/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
