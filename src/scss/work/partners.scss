@@ -1,0 +1,25 @@
+.front-partners {
+  padding-bottom: 50px;
+}
+.partners-slider  {
+  &__item {
+    display: table;
+    height: 45px;
+  }
+
+  &__link {
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  .owl-next,
+  .owl-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+}
