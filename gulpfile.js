@@ -14,16 +14,6 @@ const newer = require('gulp-newer');
 const uglify = require('gulp-uglify');
 const pipeline = require('readable-stream').pipeline;
 
-// const rename = require('gulp-rename');
-// const spritesmith = require('gulp.spritesmith');
-// const merge = require('merge-stream');
-
-// gulp.task('templates', function () {
-//   return gulp.src('pages/*.html')
-//         .pipe(rigger())
-//         .pipe(gulp.dest('dist/'));
-// });
-
 gulp.task('img', () =>
     gulp.src('src/images/**')
         .pipe(imagemin())
@@ -42,25 +32,6 @@ gulp.task('sass', function(){
         .pipe(gulp.dest("dist/css"))
 });
 
-// gulp.task('sprite', function () {
-//   var spriteData = gulp.src('src/resources/images/icons/*.png')
-//     .pipe(spritesmith({
-//       imgName: 'icons.png',
-//       cssName: 'icons.min.css',
-//       cssOpts: { cssSelector: function (sprite) { return '.' + sprite.name; } },
-//       imgPath: '../images/icons.png'
-//     }));
-//
-//   var imgStream = spriteData.img
-//     .pipe(gulp.dest('dist/images'));
-//   var cssStream = spriteData.css
-//     // .pipe(replace(/^\.icon-/gm, '.'))
-//     .pipe(cssnano({ zIndex: false }))
-//     .pipe(gulp.dest('dist/style'));
-//
-//   return (imgStream, cssStream);
-// });
-
 gulp.task('clean', function() {
   return del('build')
 });
@@ -77,18 +48,10 @@ gulp.task('resources', function() {
       .pipe(gulp.dest('dist/'))
 });
 
-// gulp.task('compress', function () {
-//   return pipeline(
-//         gulp.src('lib/*.js'),
-//         uglify(),
-//         gulp.dest('dist')
-//   );
-// });
-//
 gulp.task('scripts', function() {
   return pipeline(
       gulp.src('src/scripts/*.js', {since: gulp.lastRun('scripts')}),
-      uglify(),
+      // uglify(),
       gulp.dest('dist/scripts'))
 });
 

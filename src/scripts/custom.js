@@ -67,7 +67,7 @@ $(document).ready(function() {
     items: 1,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
-    lazyLoad : true,
+    // lazyLoad : true,
     responsive: {
       768: {
         nav: true
@@ -162,13 +162,16 @@ $(document).ready(function() {
   $('.js-main-slider').on('initialize.owl.carousel', function(event){
     $('.main-slider__img-sm').addClass('invisible');
     $('.main-slider__button-block').addClass('invisible');
-});
-$('.js-main-slider').on('initialized.owl.carousel', function(event){
+  });
+  $('.js-main-slider').on('initialized.owl.carousel', function(event){
     $('.main-slider__img-sm').removeClass('invisible');
     $('.main-slider__button-block').removeClass('invisible');
-});
+  });
+
   $('.js-main-slider').owlCarousel(owlOptions_1);
   $('.js-partners-slider').owlCarousel(owlOptions_8);
+
+
 
   $('input[name="tel"]').inputmask({
     "mask": "+7 (999) 999-9999"
@@ -270,7 +273,7 @@ $.fn.serializeFormJSON = serializeFormJSON; $(document).on('click', '.js-submit'
       contentType: 'application/json'
     });
     $('.modal').modal('hide');
-    
+
     if (form.hasClass('feedback')) {
       form.siblings('.alert').removeClass('hidden')
     }

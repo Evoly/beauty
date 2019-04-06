@@ -1,8 +1,9 @@
 
 .nomination__list {
   column-count: 4;
+  overflow: hidden;
 
-  @media (min-width: $screen-sm-max) {
+  @media (min-width: $screen-md-max) {
       max-height: 410px;
   }
 
