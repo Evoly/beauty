@@ -2,7 +2,12 @@
 .nomination__list {
   column-count: 4;
 
-  @media (max-width: $screen-md-max) {
+  @media (min-width: $screen-sm-max) {
+      max-height: 410px;
+  }
+
+
+  @media (max-width: $screen-sm-max) {
 		column-count: 3;
   }
 

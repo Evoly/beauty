@@ -181,7 +181,7 @@ function checkInput(el) {
   var inputType = $this.attr('data-type');
 
   if (inputType === 'text') {
-    if (!value.match(/^[\u0400-\u04FF]*$/)) {
+    if (!value.match(/^[а-яА-ЯёЁa-zA-Z0-9]*$/)) {
       $this.parent().addClass('has-error');
     } else {
       $this.parent().removeClass('has-error');
@@ -192,6 +192,15 @@ function checkInput(el) {
   if (inputType === 'tel') {
     var tel = value.replace(/[^0-9]/g, '');
     if (tel.length !== 11) {
+      $this.parent().addClass('has-error');
+    } else {
+      $this.parent().removeClass('has-error');
+    }
+  }
+
+  // E-mail
+  if (inputType === 'email') {
+    if (!value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
       $this.parent().addClass('has-error');
     } else {
       $this.parent().removeClass('has-error');
@@ -216,7 +225,7 @@ function checkInput(el) {
   }
 }
 
-$(document).on('input', '.modal-body input', function() {
+$(document).on('input', '.modal-body input , .feedback input', function() {
   $(this).parent().removeClass('has-error');
   checkInput($(this));
 });
@@ -261,10 +270,12 @@ $.fn.serializeFormJSON = serializeFormJSON; $(document).on('click', '.js-submit'
       contentType: 'application/json'
     });
     $('.modal').modal('hide');
+    
+    if (form.hasClass('feedback')) {
+      form.siblings('.alert').removeClass('hidden')
+    }
   }
 });
-
-// TODO: del ?
 
 $('.js-truncate').on('click', function (e) {
   e.preventDefault();

@@ -88,23 +88,25 @@
 					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
 						<h2 class="feedback-h2">Напишите нам </h2>
 						<!--'start_frame_cache_Uu0i2y'-->
-						<div class="feedback" id="feedback" data-ajax="/bitrix/templates/s7_beauty/components/bitrix/main.feedback/feedback">
-							<div id="alerts">
+						<div class="feedback">
+							<div class="alert alert-success hidden">
+								<p>Спасибо, ваше сообщение принято</p>
 							</div>
-							<form action="kontakty.html" method="POST" role="form" id="feedback">
-								<input type="hidden" name="sessid" id="sessid" value="e989ae7ecb3db845edb0360a025f3b9f" /> <input type="hidden" name="PARAMS_HASH" value="1b3ee72e02be60afed15775d46a14dbf">
+							<form action="#" method="POST" role="form" id="feedback" class="feedback">
+								<input type="hidden" name="sessid" id="sessid" value="e989ae7ecb3db845edb0360a025f3b9f" />
+								<input type="hidden" name="PARAMS_HASH" value="1b3ee72e02be60afed15775d46a14dbf">
 								<input type="hidden" name="submit" value="Y">
 								<div class="form-group">
 									<label class="control-label" for="user_name">
 										Ваше имя *
 									</label>
-									<input type="text" class="form-control" name="user_name" id="user_name" value="" required>
+									<input type="text" class="form-control" name="user_name" id="user_name" value="" required data-type="text">
 								</div>
 								<div class="form-group">
 									<label class="control-label" for="user_email">
 										Ваш E-mail *
 									</label>
-									<input type="email" class="form-control" name="user_email" id="user_email" value="" required>
+									<input type="email" class="form-control" name="user_email" id="user_email" value="" required data-type="email">
 								</div>
 								<div class="form-group">
 									<label class="control-label" for="message">
@@ -123,7 +125,7 @@
 									</div>
 								</div>
 								<span class="help-block">Поля отмеченные * обязательны для заполнения.</span>
-								<button class="button">Отправить</button>
+								<button class="button js-submit">Отправить</button>
 								<div class="clearfix"></div>
 							</form>
 						</div>

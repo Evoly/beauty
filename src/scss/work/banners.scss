@@ -28,45 +28,15 @@
     &_join {
 
       @media (min-width: $screen-xs-max) {
-        top: 40%;
-        transform: translateY(-50%);
+        top: 0;
         right: 68%;
       }
-
-
-      // @media (max-width: $screen-xs-max) {
-      //   width: 28%;
-      // }
-      //
-      // @media (max-width: $screen-xxs-max) {
-      //   width: 35%;
-      //   top: 50%;
-      //   left: 5%;
-      //   right: auto;
-      // }
-
-      // @media (max-width: $screen-sm-max) {
-      //   width: 55.58%;
-      //   top: 60%;
-      //   left: 0;
-      //   right: 0;
-      //   margin: auto;
-      // }
-      // @media (max-width: $screen-xs-max) {
-      //   width: 55.58%;
-      //   top: 60%;
-      //   left: 0;
-      //   right: 0;
-      //   margin: auto;
-      //     transform: translateY(0);
-      // }
     }
-
 
     &_vote {
       @media (min-width: $screen-xs-max) {
         bottom: 0;
-        right: 46%;
+        right: 47%;
       }
     }
 
@@ -87,44 +57,43 @@
  &__button {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 71%;
+    transform: rotate(45deg);
+    padding-top: 71%;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     &_join {
 
       @media (min-width: $screen-xs-max) {
-        max-height: calc(100% - 23%);
-        top: 23%;
-        bottom: 0;
-        margin: auto;
+        top: 30%;
       }
-
-
-      // @media (max-width: $screen-xs-max) {
-      //   top: 0;
-      //   max-height: 100%;
-      // }
     }
 
     &_vote {
       @media (min-width: $screen-xs-max) {
-        top: auto;
-        bottom: -15%;
+        bottom: 12%;
       }
     }
 
     &_buy {
       @media (min-width: $screen-xs-max) {
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(45deg);
       }
+    }
 
+    @media (max-width: $screen-xs-max) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
     }
   }
 
 .owl-carousel &__button-img {
-    max-width: 71%;
-    width: 71%;;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -132,7 +101,6 @@
     right: 0;
     margin: auto;
     z-index: 2;
-    transform: rotate(45deg);
     box-shadow: 1px 0 35px 0 rgba(0,0,0,.5);
     transition: .3s ease-in-out;
 
@@ -144,7 +112,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 4;
     font-size:50px;
   	text-transform:uppercase;
@@ -171,10 +139,6 @@
       font-size:50px;
       font-size: 8vw;
     }
-    // @media (max-width: $screen-xxs-max) {
-    //   font-size:15px;
-    //     font-size: 2.7vw;
-    // }
 
     &_vote {
       @media (max-width: $screen-xs-max) {
