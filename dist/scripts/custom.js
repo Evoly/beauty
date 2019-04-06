@@ -163,14 +163,18 @@ $(document).ready(function() {
     $('.main-slider__img-sm').addClass('invisible');
     $('.main-slider__button-block').addClass('invisible');
   });
-  $('.js-main-slider').on('initialized.owl.carousel', function(event){
-    $('.main-slider__img-sm').removeClass('invisible');
-    $('.main-slider__button-block').removeClass('invisible');
-  });
 
   $('.js-main-slider').owlCarousel(owlOptions_1);
   $('.js-partners-slider').owlCarousel(owlOptions_8);
 
+  $(".first").one("load", function() {
+    $('.main-slider__img-sm').removeClass('invisible');
+    $('.main-slider__button-block').removeClass('invisible');
+  }).each(function() {
+    if(this.complete) {
+        $(this).trigger('load');
+    }
+  });
 
 
   $('input[name="tel"]').inputmask({
@@ -298,5 +302,10 @@ $('.js-truncate').on('click', function (e) {
       scrollTop: top
     }, 1300);
   }
+});
+
+$('.modal-link a').on('click', function (){
+  // $(this).
+  $('.modal').modal('hide');
 });
 });

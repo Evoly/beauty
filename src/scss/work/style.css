@@ -335,6 +335,15 @@ html{height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body,ht
 	height: 370px;
 }
 
+.modal-link {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+}
+.modal-link {
+  font-size: 13px;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
 	.fancybox-detail {
 		height: 300px;
