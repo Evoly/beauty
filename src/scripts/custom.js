@@ -55,6 +55,7 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 $(document).ready(function() {
   $('.fancybox-detail').fancybox();
   $('[data-fancybox-group="slider-sm"]').fancybox();
+  $('[data-fancybox-group="gallery"]').fancybox();
   var icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.033 792.033"><path d="M617.858,370.896L221.513,9.705c-13.006-12.94-34.099-12.94-47.105,0c-13.006,12.939-13.006,33.934,0,46.874     l372.447,339.438L174.441,735.454c-13.006,12.94-13.006,33.935,0,46.874s34.099,12.939,47.104,0l396.346-361.191     c6.932-6.898,9.904-16.043,9.441-25.087C627.763,386.972,624.792,377.828,617.858,370.896z"/></svg>'
 
   var owlOptions_1 = {
@@ -158,6 +159,14 @@ $(document).ready(function() {
 
   $('.js-detail-slider').owlCarousel(owlOptions_3);
 
+  $('.js-main-slider').on('initialize.owl.carousel', function(event){
+    $('.main-slider__img-sm').addClass('invisible');
+    $('.main-slider__button-block').addClass('invisible');
+});
+$('.js-main-slider').on('initialized.owl.carousel', function(event){
+    $('.main-slider__img-sm').removeClass('invisible');
+    $('.main-slider__button-block').removeClass('invisible');
+});
   $('.js-main-slider').owlCarousel(owlOptions_1);
   $('.js-partners-slider').owlCarousel(owlOptions_8);
 
